@@ -2,13 +2,7 @@ lvim.plugins = {
   { 'jose-elias-alvarez/typescript.nvim' },
 
   { 'lunarvim/lunar.nvim' },
-  { "morhetz/gruvbox" },
-  { "sainnhe/gruvbox-material" },
-  { "sainnhe/sonokai" },
-  { "sainnhe/edge" },
-  { "lunarvim/horizon.nvim" },
-  { "tomasr/molokai" },
-  { "ayu-theme/ayu-vim" },
+  { 'Mofiqul/vscode.nvim' },
 
   {
     "folke/trouble.nvim",
@@ -55,11 +49,6 @@ lvim.plugins = {
   },
 
   {
-    'nvim-telescope/telescope-frecency.nvim',
-    dependencies = { 'nvim-telescope/telescope.nvim', 'kkharji/sqlite.lua' },
-  },
-
-  {
     'AckslD/nvim-trevJ.lua',
     config = 'require("trevj").setup()',
     init = function()
@@ -69,7 +58,20 @@ lvim.plugins = {
     end,
   },
 
-  { 'akinsho/toggleterm.nvim', version = "*", opts = { --[[ things you want to change go here]] } }
+  { 'akinsho/toggleterm.nvim', version = "*" },
+
+  {
+    "Pocco81/auto-save.nvim",
+    config = function()
+      require("auto-save").setup()
+    end,
+  },
+
+  {
+    'stevearc/oil.nvim',
+    opts = {},
+    dependencies = { { "echasnovski/mini.icons", opts = {} } },
+  },
 }
 
 lvim.builtin.telescope.on_config_done = function(telescope)

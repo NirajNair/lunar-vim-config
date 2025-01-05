@@ -30,3 +30,6 @@ lvim.lsp.buffer_mappings.normal_mode["gf"] = {
 
 lvim.keys.normal_mode["<C-t>"] = ":ToggleTerm direction=float<CR>"
 lvim.keys.term_mode["<C-t>"] = "<C-d>"
+
+-- Opens the file epxlorer as a buffer and lets user edit it like text file
+lvim.keys.normal_mode["-"] = "<CMD>Oil<CR>"

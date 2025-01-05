@@ -1,11 +1,10 @@
 local themes = {
-  gruvbox = "gruvbox",
-  rose_pine = "rose-pine",
   lunar = "lunar",
+  vscode = "vscode"
 }
 
 lvim.transparent_window = false
-lvim.colorscheme = themes.lunar
+lvim.colorscheme = themes.vscode
 
 if vim.g.neovide then
   lvim.transparent_window = false
